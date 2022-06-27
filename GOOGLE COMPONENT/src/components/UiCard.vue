@@ -10,8 +10,14 @@
           target="_blank"
         >
           <img v-if="item.image" class="image" :src="item.image" alt="" />
-          <h2 v-else>{{ item.id }}</h2>
-          <h2>{{ item.name || item.defaultName || item.id }}</h2>
+          <b-icon
+            v-else-if="item.icon"
+            :icon="item.icon"
+            class="bg-light p-4 rounded-circle"
+            variant="dark"
+          ></b-icon>
+          <b-icon v-else :icon="item.iconDefault"></b-icon>
+          <h2>{{ item.name || item.id }}</h2>
         </b-link>
       </div>
     </div>
@@ -67,7 +73,8 @@ h2 {
   color: #fff;
 }
 
-.image {
+.image,
+.b-icon {
   width: 60px;
   height: 60px;
   margin: 0 auto;
@@ -78,9 +85,7 @@ h2 {
   width: 40rem;
   height: 50rem;
   margin: 0 auto;
-  /* border-radius: 4rem; */
   box-shadow: 2px 2px 10px #000;
-  /* background-color: #000; */
   overflow-y: scroll;
 }
 

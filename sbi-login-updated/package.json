@@ -1,5 +1,5 @@
 {
-  "name": "ui-001",
+  "name": "sbi-login-updated",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,13 +10,14 @@
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
     "bootstrap": "^4.5.2",
-    "bootstrap-vue": "^2.17.3",
+    "bootstrap-vue": "^2.22.0",
     "core-js": "^3.8.3",
     "mutationobserver-shim": "^0.3.7",
     "popper.js": "^1.16.1",
     "portal-vue": "^2.1.7",
+    "vee-validate": "^3.4.14",
     "vue": "^2.6.14",
-    "vuex": "^4.0.2"
+    "vue-select": "^3.18.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
