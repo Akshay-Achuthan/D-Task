@@ -7,7 +7,7 @@
           :key="item.index"
           :href="item.link"
           class="link-container"
-          target="_blank"
+          :target="item.target"
         >
           <img v-if="item.image" class="image" :src="item.image" alt="" />
           <b-icon
